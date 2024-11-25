@@ -1,4 +1,4 @@
-# UDAE_RL
+# UDAAE_RL
 
 ## Unified Planning Framework with Drivable Area Attention Extraction for Autonomous Driving in Urban Scenarios
 The diversity of urban traffic scenarios poses challenges for autonomous driving. Confronted with numerous unpredictable and uncertain behaviors of participants, autonomous vehicles struggle to capture dynamic characteristics, resulting in instability and limited generalization of the decision-making and planning system. To tackle this issue, this paper proposes a hierarchical decision-making and planning framework based on reinforcement learning, which employs a unified drivable area cross-attention extraction mechanism, effectively transforming behavioral decisions within intricate and varied driving scenarios into a streamlined process of identifying and selecting optimal drivable areas. 
