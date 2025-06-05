@@ -1,38 +1,75 @@
-# UDAAE_RL
-
-## Unified Planning Framework with Drivable Area Attention Extraction for Autonomous Driving in Urban Scenarios
-The diversity of urban traffic scenarios poses challenges for autonomous driving. Confronted with numerous unpredictable and uncertain behaviors of participants, autonomous vehicles struggle to capture dynamic characteristics, resulting in instability and limited generalization of the decision-making and planning system. To tackle this issue, this paper proposes a hierarchical decision-making and planning framework based on reinforcement learning, which employs a unified drivable area cross-attention extraction mechanism, effectively transforming behavioral decisions within intricate and varied driving scenarios into a streamlined process of identifying and selecting optimal drivable areas. 
-Firstly, the target drivable area is represented by lane gaps, and a segmentation network for target area extraction is designed to reduce the complexity of manual coordinate extraction.
-Secondly, the bird's-eye view of ego vehicle and lane gaps features are feature encoded respectively, and the cross attention between the two two components is extracted. Subsequently, attention features are further fused with ego vehicle states.
-This refined information is then utilized within a reinforcement learning network to facilitate the learning and feedback of vehicle speed and target position. Ultimately, To ensure vehicle safety and precise execution of decisions, an iterative optimization method is used to generate execution trajectories. Comparative simulations demonstrate promising performance of the proposed method, with a success rate over 90\% in different scenarios including highway, merge, and intersection, and is improved by 45.2\% compared to different environment characterization methods. Benchmark comparisons and ablation studies are conducted to fully validate the merits of our method.
-
-### Video:
-
-- UDAE_RL Test in different scenarios
-
 <div align="center">
-    <img src="results/demo.gif" width="50%">
+<h3>Unified Planning Framework with Drivable Area Attention Extraction for <br> Autonomous Driving in Urban Scenarios</h3>
+
+Siyuan Chen , Li Yang , Zihao Mao, Mingyu Hou , Liu He , and Wenjie Song
+
+[**[IEEE Xplore]**](https://ieeexplore.ieee.org/document/10993315/)
+
+IEEE ROBOTICS AND AUTOMATION LETTERS, JULY 2025
+
 </div>
 
+The diversity of urban traffic scenarios poses challenges in stability and generalization for autonomous driving. To tackle this issue, this letter proposes a hierarchical decision-making and planning framework based on reinforcement learning, which employs a unified drivable area cross-attention extraction mechanism, effectively transforming behavioral decisions within intricate and varied driving scenarios into a streamlined process of identifying and selecting optimal drivable areas. Firstly, the target drivable area is represented by lane gaps, and a segmentation network is designed to reduce the complexity of manual coordinate extraction. Secondly, the bird's-eye view of ego vehicle and lane gaps features are feature encoded respectively, and the cross attention between the two components is extracted. Subsequently, attention features are further fused with ego vehicle states. This refined information is then used within a reinforcement learning network to facilitate learning and feedback of vehicle speed and target position. Ultimately, To ensure vehicle safety and precise execution of decisions, an iterative optimization method is used to generate execution trajectories. Comparative simulations demonstrate promising performance of the proposed method, with a success rate greater than 93.3\% in different scenarios, including expressway, merge and intersection, and are improved by 48.8\% compared to different environmental characterization methods. Benchmark comparisons and ablation studies are conducted to fully validate the merits of our method.
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 2%;">
+
+  <img src="./assets/demo.gif" width="45%" alt="Video 1">
+
+</div>
+
+
+## To Do List
+
+The code is under cleaning and will be released gradually. [Coming Soon] 🚀
+
+- [ ] training code
+- [x] initial repo & paper
+
+## Table of Contents
+
+- [Video Presentation](#video-presentation)
+- [Method](#method)
+   - [Learning-based Methods](#learning-based-methods)
+   - [Rule-based / Hybrid Methods](#rule-based-hybrid-methods)
+   - [Qualitative Results](#qualitative-results)
+- [Getting Started](#getting-started)
+  - [Closed-loop Evaluation](#closed-loop-evaluation)
+  - [Training](#training)
+
+## Video Presentation
 
 - Attention weights of Unified Arivable Area in different scenarios
 
-<div style="display: flex; justify-content: center;">
-    <div style="width: 100px; height: 100px;">
-        <img src="results/1/demo.gif" style="width: 100%; height: 100%; object-fit: contain;">
-    </div>
-    <div style="width: 100px; height: 100px;">
-        <img src="results/1/demo_attention.gif" style="width: 100%; height: 100%; object-fit: contain;">
-    </div>
+<div style="display: flex; justify-content: center; align-items: center; gap: 2%;">
+
+  <img src="./assets/1/demo.gif"  width="34%" alt="Video 2">
+  <img src="./assets/1/demo_attention.gif"  width="40%" alt="Video 2">
+
 </div>
 <br>
-<div style="display: flex; justify-content: center;">
-    <div style="width: 100px; height: 100px;">
-        <img src="results/2/demo.gif" style="width: 100%; height: 100%; object-fit: contain;">
-    </div>
-    <div style="width: 100px; height: 100px;">
-        <img src="results/2/demo_attention.gif" style="width: 100%; height: 100%; object-fit: contain;">
-    </div>
+<div style="display: flex; justify-content: center; align-items: center; gap: 2%;">
+
+  <img src="./assets/2/demo.gif"  width="34%" alt="Video 2">
+  <img src="./assets/2/demo_attention.gif"  width="40%" alt="Video 2">
+
 </div>
 
-### Source codes will be public available upon acceptance.
+## Method
+
+<div style="display: flex; justify-content: center; align-items: center; gap: 2%;">
+  <image src="assets/framework.png" width=75%>
+</div>
+
+
+## Bibtex
+
+If you find our code and paper can help, please cite our paper as:
+```
+@article{chen2025unified,
+  title={Unified Planning Framework with Drivable Area Attention Extraction for Autonomous Driving in Urban Scenarios},
+  author={Chen, Siyuan and Yang, Li and Mao, Zihao and Hou, Mingyu and He, Liu and Song, Wenjie},
+  journal={IEEE Robotics and Automation Letters},
+  year={2025},
+  publisher={IEEE}
+}
+```
