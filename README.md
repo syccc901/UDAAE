@@ -34,12 +34,13 @@ The code is under cleaning and will be released gradually. [Coming Soon] 🚀
 
 - Attention weights of Unified Arivable Area in different scenarios
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 2%;">
-
-  <img src="./assets/1/demo.gif"  width="25%" alt="Video 2">
+<div style="display: flex; justify-content: center; align-items: center; gap: 2%;", align="center">
+  <img src="./assets/1/demo.gif"  width="26%" alt="Video 2">
   <img src="./assets/1/demo_attention.gif"  width="30%" alt="Video 2">
-  <br>
-  <img src="./assets/2/demo.gif"  width="25%" alt="Video 2">
+</div>
+<br>
+<div style="display: flex; justify-content: center; align-items: center; gap: 2%;", align="center">
+  <img src="./assets/2/demo.gif"  width="26%" alt="Video 2">
   <img src="./assets/2/demo_attention.gif"  width="30%" alt="Video 2">
 </div>
 
