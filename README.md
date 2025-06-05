@@ -11,7 +11,7 @@ IEEE ROBOTICS AND AUTOMATION LETTERS, JULY 2025
 
 The diversity of urban traffic scenarios poses challenges in stability and generalization for autonomous driving. To tackle this issue, this letter proposes a hierarchical decision-making and planning framework based on reinforcement learning, which employs a unified drivable area cross-attention extraction mechanism, effectively transforming behavioral decisions within intricate and varied driving scenarios into a streamlined process of identifying and selecting optimal drivable areas. Firstly, the target drivable area is represented by lane gaps, and a segmentation network is designed to reduce the complexity of manual coordinate extraction. Secondly, the bird's-eye view of ego vehicle and lane gaps features are feature encoded respectively, and the cross attention between the two components is extracted. Subsequently, attention features are further fused with ego vehicle states. This refined information is then used within a reinforcement learning network to facilitate learning and feedback of vehicle speed and target position. Ultimately, To ensure vehicle safety and precise execution of decisions, an iterative optimization method is used to generate execution trajectories. Comparative simulations demonstrate promising performance of the proposed method, with a success rate greater than 93.3\% in different scenarios, including expressway, merge and intersection, and are improved by 48.8\% compared to different environmental characterization methods. Benchmark comparisons and ablation studies are conducted to fully validate the merits of our method.
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 2%;">
+<div style="display: flex; justify-content: center; align-items: center; gap: 2%;", align="center">
 
   <img src="./assets/demo.gif" width="45%" alt="Video 1">
 
@@ -29,12 +29,6 @@ The code is under cleaning and will be released gradually. [Coming Soon] 🚀
 
 - [Video Presentation](#video-presentation)
 - [Method](#method)
-   - [Learning-based Methods](#learning-based-methods)
-   - [Rule-based / Hybrid Methods](#rule-based-hybrid-methods)
-   - [Qualitative Results](#qualitative-results)
-- [Getting Started](#getting-started)
-  - [Closed-loop Evaluation](#closed-loop-evaluation)
-  - [Training](#training)
 
 ## Video Presentation
 
@@ -42,23 +36,18 @@ The code is under cleaning and will be released gradually. [Coming Soon] 🚀
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 2%;">
 
-  <img src="./assets/1/demo.gif"  width="34%" alt="Video 2">
-  <img src="./assets/1/demo_attention.gif"  width="40%" alt="Video 2">
-
-</div>
-<br>
-<div style="display: flex; justify-content: center; align-items: center; gap: 2%;">
-
-  <img src="./assets/2/demo.gif"  width="34%" alt="Video 2">
-  <img src="./assets/2/demo_attention.gif"  width="40%" alt="Video 2">
-
+  <img src="./assets/1/demo.gif"  width="25%" alt="Video 2">
+  <img src="./assets/1/demo_attention.gif"  width="30%" alt="Video 2">
+  <br>
+  <img src="./assets/2/demo.gif"  width="25%" alt="Video 2">
+  <img src="./assets/2/demo_attention.gif"  width="30%" alt="Video 2">
 </div>
 
 ## Method
 
-<center>
+<div align="center">
   <image src="assets/framework.png" width=75%>
-</center>
+</div>
 
 ## Bibtex
 
