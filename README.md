@@ -56,10 +56,9 @@ The code is under cleaning and will be released gradually. [Coming Soon] 🚀
 
 ## Method
 
-<div style="display: flex; justify-content: center; align-items: center; gap: 2%;">
+<center>
   <image src="assets/framework.png" width=75%>
-</div>
-
+</center>
 
 ## Bibtex
 
